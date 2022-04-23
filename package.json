@@ -1,0 +1,31 @@
+{
+  "name": "fullstack-project",
+  "version": "1.0.0",
+  "description": "Project for learning Node JS Angular Express",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main",
+    "server": "nodemon main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oltkachuk/OwnProject.git"
+  },
+  "keywords": [
+    "Express",
+    "FullStack",
+    "Node"
+  ],
+  "author": "Oleh Tkachuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oltkachuk/OwnProject/issues"
+  },
+  "homepage": "https://github.com/oltkachuk/OwnProject#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
