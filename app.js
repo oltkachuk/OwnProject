@@ -1,5 +1,7 @@
 const express = require('express')
+const app = express()
 const mongoose = require('mongoose')
+const passport = require('passport')
 
 const keys = require("./config/keys")
 const authRouter = require("./route/auth")
@@ -8,13 +10,16 @@ const analyitcsRouter = require("./route/analytics")
 const categoryRouter = require("./route/categories")
 const transactionRouter = require("./route/transactions")
 
+app.use(passport.initialize())
+require("./middleware/passport-jwt")(passport)
+
 mongoose.connect(keys.mongoURL)
  .then(() => {
      console.log("MongoDB connected")
  })
  .catch( e => {console.log(e)} )
 
-const app = express()
+
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
