@@ -32,6 +32,7 @@ app.use(require("cors")())
 
 //morgan (for dev userful testing)
 app.use(require('morgan')('dev'))
+app.use('/uploads', express.static('uploads'))
 
 app.use("/api/auth", authRouter)
 app.use("/api/analytics", analyitcsRouter)
