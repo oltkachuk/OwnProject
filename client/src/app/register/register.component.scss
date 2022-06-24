@@ -1,4 +1,4 @@
-.login-center {
+.register-center {
     display: flex;
     height: 100%;
     width: 100%;
@@ -10,14 +10,12 @@
         bottom: 10%;
         max-width: 100%;
         min-width: 25%;
-
         &-button-form {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
-        &-register-form {
+        &-login-form{
             margin-top: 20px;
             display: flex;
             align-items: center;
@@ -26,6 +24,6 @@
     }
 }
 
-.mat-form-field {
+.mat-form-field{
     display: inline;
 }
