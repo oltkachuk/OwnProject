@@ -1,0 +1,31 @@
+.login-center {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    &-component {
+        position: relative;
+        bottom: 10%;
+        max-width: 100%;
+        min-width: 25%;
+        &-title {}
+
+        &-email-form {
+
+        }
+
+        &-password-form {}
+
+        &-button-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.mat-form-field{
+    display: inline;
+}
