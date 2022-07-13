@@ -1,0 +1,46 @@
+<mat-grid-list cols="4" rowHeight="9.9vh">
+    <mat-grid-tile colspan="4" rowspan="1" class="header-layout">
+        <div class="header-main">
+            <div class="header-main-left">
+                <div class="header-main-left-burger">
+                    <button type="button" mat-button (click)="drawer.toggle()" class="burger-icon">
+                        <mat-icon class="burger">menu</mat-icon>
+                    </button>
+                </div>
+                <div class="header-main-left-logo">
+                    <h2>Home Project</h2>
+                </div>
+            </div>
+            <div class="header-main-right">
+                <div class="header-main-right-info">
+                    <mat-icon>person</mat-icon> &nbsp;
+                    <div>User</div>
+                </div>
+                <div class="header-main-right-more">
+                    <button mat-button [matMenuTriggerFor]="beforeMenu">
+                        <mat-icon>arrow_drop_down</mat-icon>
+                    </button>
+                    <mat-menu #beforeMenu="matMenu" xPosition="before">
+                        <button mat-menu-item><mat-icon>logout</mat-icon>Logout</button>
+                    </mat-menu>
+                </div>
+            </div>
+        </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4" rowspan="9">
+        <mat-drawer-container class="example-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+                <div class="example-menu" cdkMenu>
+                    <button class="example-menu-item" cdkMenuItem><mat-icon>grid_view</mat-icon> &nbsp;Dashbord</button>
+                    <button class="example-menu-item" cdkMenuItem><mat-icon>paid</mat-icon> &nbsp;Transactions</button>
+                    <button class="example-menu-item" cdkMenuItem><mat-icon>work</mat-icon> &nbsp;Categories</button>
+                    <button class="example-menu-item" cdkMenuItem><mat-icon>equalizer</mat-icon> &nbsp;Analytics</button>
+                  </div>
+            </mat-drawer>
+
+            <div class="example-sidenav-content"></div>
+
+        </mat-drawer-container>
+    </mat-grid-tile>
+</mat-grid-list>
