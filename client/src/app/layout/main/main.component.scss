@@ -1,25 +1,8 @@
+// Header
 .header-layout {
   background-color: rgba(170, 159, 159, 0.351);
 }
 
-.example-container {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.example-sidenav {
-  padding-bottom: 20px;
-  min-width: 15%;
-  max-width: 30%;
-}
 
 .burger-icon {
   border: none;
@@ -84,36 +67,57 @@
 }
 
 
+// Sidenav
+.sidenav-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
 
-.example-menu {
+.left-sidenav {
+  padding-bottom: 20px;
+  min-width: 15%;
+  max-width: 30%;
+  &-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+// Menu
+
+.nav-menu {
   display: inline-flex;
   flex-direction: column;
   width: 100%;
   background-color: rgb(255, 255, 255);
   padding: 6px 0;
+  &-item {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: larger;
+  
+  
+    user-select: none;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+  }
 }
 
-.example-menu-item {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-
-
-  user-select: none;
-  min-width: 64px;
-  line-height: 36px;
-  padding: 0 16px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex: 1;
-}
-
-.example-menu-item:hover {
+.nav-menu-item:hover {
   background-color: rgb(208, 208, 208);
 }
 
-.example-menu-item:active {
+.nav-menu-item:active {
   background-color: rgb(170, 170, 170);
 }

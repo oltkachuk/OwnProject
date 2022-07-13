@@ -29,17 +29,17 @@
 
     </mat-grid-tile>
     <mat-grid-tile colspan="4" rowspan="9">
-        <mat-drawer-container class="example-container" autosize>
-            <mat-drawer #drawer class="example-sidenav" mode="side">
-                <div class="example-menu" cdkMenu>
-                    <button class="example-menu-item" cdkMenuItem><mat-icon>grid_view</mat-icon> &nbsp;Dashbord</button>
-                    <button class="example-menu-item" cdkMenuItem><mat-icon>paid</mat-icon> &nbsp;Transactions</button>
-                    <button class="example-menu-item" cdkMenuItem><mat-icon>work</mat-icon> &nbsp;Categories</button>
-                    <button class="example-menu-item" cdkMenuItem><mat-icon>equalizer</mat-icon> &nbsp;Analytics</button>
+        <mat-drawer-container class="sidenav-container" autosize>
+            <mat-drawer #drawer class="left-sidenav" mode="side">
+                <div class="nav-menu" cdkMenu>
+                    <button class="nav-menu-item" cdkMenuItem><mat-icon>grid_view</mat-icon> &nbsp;Dashbord</button>
+                    <button class="nav-menu-item" cdkMenuItem><mat-icon>paid</mat-icon> &nbsp;Transactions</button>
+                    <button class="nav-menu-item" cdkMenuItem><mat-icon>work</mat-icon> &nbsp;Categories</button>
+                    <button class="nav-menu-item" cdkMenuItem><mat-icon>equalizer</mat-icon> &nbsp;Analytics</button>
                   </div>
             </mat-drawer>
 
-            <div class="example-sidenav-content"></div>
+            <div class="left-sidenav-content"></div>
 
         </mat-drawer-container>
     </mat-grid-tile>
