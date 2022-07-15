@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { MainModule } from './layout/main/main.module';
+import { DashbordComponent } from './dashbord/dashbord.component';
+import { DashbordModule } from './dashbord/dashbord.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { MainModule } from './layout/main/main.module';
     BrowserAnimationsModule,
     LoginModule,
     RegisterModule,
-    MainModule
+    MainModule,
+    DashbordModule
   ],
   providers: [],
   bootstrap: [AppComponent]
