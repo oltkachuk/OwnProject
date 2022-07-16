@@ -6,9 +6,9 @@
     <mat-tab *ngFor="let tab of asyncTabs | async">
       <ng-template mat-tab-label>{{tab.label}}</ng-template>
       <div class="card-template" style="background-color: {{tab.color}};">
-        <div class="card-template-usd">
+        <div>
             <h2>Total amount: 104 {{tab.label}}</h2>
-            <h2>Profit amount: -500 {{tab.label}}</h2>
+            <h2 class="">Profit amount: -500 {{tab.label}}</h2>
             <h2>Сosts amount: 500 {{tab.label}}</h2>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { MonthAnalyticsComponent } from './month-analytics/month-analytics.compo
 
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,7 +20,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     CommonModule,
     MatGridListModule, 
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
   exports: [DashbordComponent]
 })
